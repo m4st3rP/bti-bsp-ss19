@@ -1,0 +1,652 @@
+rm -r -f ./obj ./bin 
+rm -rf *.o mmanage vmappl logfile.txt pagefile.bin
+rm -rf /dev/shm/sem.sem_wakeup_mmanager_vm_simulation
+rm -rf /dev/shm/sem.sem_wakeup_vmapp_vm_simulation
+sudo ipcrm -ashm
+computing dependencies for  src/syncdataexchange.c
+computing dependencies for  src/logger.c
+computing dependencies for  src/pagefile.c
+computing dependencies for  src/mmanage.c
+computing dependencies for  src/vmaccess.c
+computing dependencies for  src/vmappl.c
+compiling src/mmanage.c ...
+compiling src/vmaccess.c ...
+compiling src/pagefile.c ...
+compiling src/logger.c ...
+compiling src/syncdataexchange.c ...
+/usr/bin/gcc -lrt -lpthread  -o bin/mmanage obj/mmanage.o obj/vmaccess.o obj/pagefile.o obj/logger.o obj/syncdataexchange.o
+compiling src/vmappl.c ...
+/usr/bin/gcc -lrt -lpthread  -o bin/vmappl obj/vmappl.o obj/vmaccess.o obj/pagefile.o obj/logger.o obj/syncdataexchange.o
+Run simulation for seed = 2806 search algo quicksort and page rep. algo FIFO and page size 8
+=============== COMPARE results for logfile_quicksort_FIFO_8.txt ==================
+=============== COMPARE results for output_quicksort_FIFO_8.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 353 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 540 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 964 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 1088 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 1205 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 1288 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 2364 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 2492 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 2601 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 2680 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 5015 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 5321 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 6748 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 7413 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 7663 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 8555 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 8897 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 9174 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 9838 search algo quicksort and page rep. algo FIFO and page size 8
+Run simulation for seed = 2806 search algo bubblesort and page rep. algo FIFO and page size 8
+=============== COMPARE results for logfile_bubblesort_FIFO_8.txt ==================
+=============== COMPARE results for output_bubblesort_FIFO_8.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 353 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 540 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 964 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 1088 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 1205 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 1288 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 2364 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 2492 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 2601 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 2680 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 5015 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 5321 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 6748 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 7413 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 7663 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 8555 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 8897 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 9174 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 9838 search algo bubblesort and page rep. algo FIFO and page size 8
+Run simulation for seed = 2806 search algo quicksort and page rep. algo CLOCK and page size 8
+=============== COMPARE results for logfile_quicksort_CLOCK_8.txt ==================
+=============== COMPARE results for output_quicksort_CLOCK_8.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 353 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 540 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 964 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 1088 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 1205 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 1288 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 2364 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 2492 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 2601 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 2680 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 5015 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 5321 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 6748 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 7413 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 7663 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 8555 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 8897 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 9174 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 9838 search algo quicksort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 2806 search algo bubblesort and page rep. algo CLOCK and page size 8
+=============== COMPARE results for logfile_bubblesort_CLOCK_8.txt ==================
+=============== COMPARE results for output_bubblesort_CLOCK_8.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 353 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 540 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 964 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 1088 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 1205 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 1288 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 2364 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 2492 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 2601 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 2680 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 5015 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 5321 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 6748 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 7413 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 7663 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 8555 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 8897 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 9174 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 9838 search algo bubblesort and page rep. algo CLOCK and page size 8
+Run simulation for seed = 2806 search algo quicksort and page rep. algo AGING and page size 8
+=============== COMPARE results for logfile_quicksort_AGING_8.txt ==================
+=============== COMPARE results for output_quicksort_AGING_8.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 353 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 540 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 964 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 1088 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 1205 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 1288 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 2364 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 2492 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 2601 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 2680 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 5015 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 5321 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 6748 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 7413 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 7663 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 8555 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 8897 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 9174 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 9838 search algo quicksort and page rep. algo AGING and page size 8
+Run simulation for seed = 2806 search algo bubblesort and page rep. algo AGING and page size 8
+=============== COMPARE results for logfile_bubblesort_AGING_8.txt ==================
+=============== COMPARE results for output_bubblesort_AGING_8.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 353 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 540 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 964 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 1088 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 1205 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 1288 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 2364 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 2492 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 2601 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 2680 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 5015 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 5321 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 6748 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 7413 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 7663 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 8555 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 8897 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 9174 search algo bubblesort and page rep. algo AGING and page size 8
+Run simulation for seed = 9838 search algo bubblesort and page rep. algo AGING and page size 8
+rm -r -f ./obj ./bin 
+rm -rf *.o mmanage vmappl logfile.txt pagefile.bin
+rm -rf /dev/shm/sem.sem_wakeup_mmanager_vm_simulation
+rm -rf /dev/shm/sem.sem_wakeup_vmapp_vm_simulation
+sudo ipcrm -ashm
+computing dependencies for  src/syncdataexchange.c
+computing dependencies for  src/logger.c
+computing dependencies for  src/pagefile.c
+computing dependencies for  src/mmanage.c
+computing dependencies for  src/vmaccess.c
+computing dependencies for  src/vmappl.c
+compiling src/mmanage.c ...
+compiling src/vmaccess.c ...
+compiling src/pagefile.c ...
+compiling src/logger.c ...
+compiling src/syncdataexchange.c ...
+/usr/bin/gcc -lrt -lpthread  -o bin/mmanage obj/mmanage.o obj/vmaccess.o obj/pagefile.o obj/logger.o obj/syncdataexchange.o
+compiling src/vmappl.c ...
+/usr/bin/gcc -lrt -lpthread  -o bin/vmappl obj/vmappl.o obj/vmaccess.o obj/pagefile.o obj/logger.o obj/syncdataexchange.o
+Run simulation for seed = 2806 search algo quicksort and page rep. algo FIFO and page size 16
+=============== COMPARE results for logfile_quicksort_FIFO_16.txt ==================
+=============== COMPARE results for output_quicksort_FIFO_16.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 353 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 540 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 964 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 1088 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 1205 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 1288 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 2364 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 2492 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 2601 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 2680 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 5015 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 5321 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 6748 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 7413 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 7663 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 8555 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 8897 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 9174 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 9838 search algo quicksort and page rep. algo FIFO and page size 16
+Run simulation for seed = 2806 search algo bubblesort and page rep. algo FIFO and page size 16
+=============== COMPARE results for logfile_bubblesort_FIFO_16.txt ==================
+=============== COMPARE results for output_bubblesort_FIFO_16.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 353 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 540 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 964 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 1088 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 1205 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 1288 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 2364 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 2492 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 2601 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 2680 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 5015 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 5321 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 6748 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 7413 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 7663 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 8555 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 8897 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 9174 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 9838 search algo bubblesort and page rep. algo FIFO and page size 16
+Run simulation for seed = 2806 search algo quicksort and page rep. algo CLOCK and page size 16
+=============== COMPARE results for logfile_quicksort_CLOCK_16.txt ==================
+=============== COMPARE results for output_quicksort_CLOCK_16.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 353 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 540 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 964 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 1088 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 1205 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 1288 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 2364 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 2492 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 2601 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 2680 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 5015 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 5321 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 6748 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 7413 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 7663 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 8555 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 8897 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 9174 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 9838 search algo quicksort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 2806 search algo bubblesort and page rep. algo CLOCK and page size 16
+=============== COMPARE results for logfile_bubblesort_CLOCK_16.txt ==================
+=============== COMPARE results for output_bubblesort_CLOCK_16.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 353 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 540 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 964 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 1088 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 1205 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 1288 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 2364 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 2492 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 2601 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 2680 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 5015 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 5321 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 6748 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 7413 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 7663 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 8555 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 8897 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 9174 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 9838 search algo bubblesort and page rep. algo CLOCK and page size 16
+Run simulation for seed = 2806 search algo quicksort and page rep. algo AGING and page size 16
+=============== COMPARE results for logfile_quicksort_AGING_16.txt ==================
+=============== COMPARE results for output_quicksort_AGING_16.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 353 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 540 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 964 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 1088 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 1205 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 1288 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 2364 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 2492 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 2601 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 2680 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 5015 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 5321 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 6748 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 7413 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 7663 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 8555 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 8897 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 9174 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 9838 search algo quicksort and page rep. algo AGING and page size 16
+Run simulation for seed = 2806 search algo bubblesort and page rep. algo AGING and page size 16
+=============== COMPARE results for logfile_bubblesort_AGING_16.txt ==================
+=============== COMPARE results for output_bubblesort_AGING_16.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 353 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 540 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 964 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 1088 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 1205 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 1288 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 2364 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 2492 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 2601 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 2680 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 5015 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 5321 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 6748 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 7413 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 7663 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 8555 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 8897 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 9174 search algo bubblesort and page rep. algo AGING and page size 16
+Run simulation for seed = 9838 search algo bubblesort and page rep. algo AGING and page size 16
+rm -r -f ./obj ./bin 
+rm -rf *.o mmanage vmappl logfile.txt pagefile.bin
+rm -rf /dev/shm/sem.sem_wakeup_mmanager_vm_simulation
+rm -rf /dev/shm/sem.sem_wakeup_vmapp_vm_simulation
+sudo ipcrm -ashm
+computing dependencies for  src/syncdataexchange.c
+computing dependencies for  src/logger.c
+computing dependencies for  src/pagefile.c
+computing dependencies for  src/mmanage.c
+computing dependencies for  src/vmaccess.c
+computing dependencies for  src/vmappl.c
+compiling src/mmanage.c ...
+compiling src/vmaccess.c ...
+compiling src/pagefile.c ...
+compiling src/logger.c ...
+compiling src/syncdataexchange.c ...
+/usr/bin/gcc -lrt -lpthread  -o bin/mmanage obj/mmanage.o obj/vmaccess.o obj/pagefile.o obj/logger.o obj/syncdataexchange.o
+compiling src/vmappl.c ...
+/usr/bin/gcc -lrt -lpthread  -o bin/vmappl obj/vmappl.o obj/vmaccess.o obj/pagefile.o obj/logger.o obj/syncdataexchange.o
+Run simulation for seed = 2806 search algo quicksort and page rep. algo FIFO and page size 32
+=============== COMPARE results for logfile_quicksort_FIFO_32.txt ==================
+=============== COMPARE results for output_quicksort_FIFO_32.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 353 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 540 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 964 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 1088 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 1205 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 1288 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 2364 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 2492 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 2601 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 2680 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 5015 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 5321 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 6748 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 7413 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 7663 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 8555 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 8897 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 9174 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 9838 search algo quicksort and page rep. algo FIFO and page size 32
+Run simulation for seed = 2806 search algo bubblesort and page rep. algo FIFO and page size 32
+=============== COMPARE results for logfile_bubblesort_FIFO_32.txt ==================
+=============== COMPARE results for output_bubblesort_FIFO_32.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 353 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 540 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 964 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 1088 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 1205 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 1288 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 2364 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 2492 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 2601 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 2680 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 5015 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 5321 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 6748 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 7413 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 7663 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 8555 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 8897 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 9174 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 9838 search algo bubblesort and page rep. algo FIFO and page size 32
+Run simulation for seed = 2806 search algo quicksort and page rep. algo CLOCK and page size 32
+=============== COMPARE results for logfile_quicksort_CLOCK_32.txt ==================
+=============== COMPARE results for output_quicksort_CLOCK_32.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 353 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 540 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 964 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 1088 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 1205 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 1288 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 2364 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 2492 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 2601 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 2680 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 5015 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 5321 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 6748 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 7413 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 7663 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 8555 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 8897 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 9174 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 9838 search algo quicksort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 2806 search algo bubblesort and page rep. algo CLOCK and page size 32
+=============== COMPARE results for logfile_bubblesort_CLOCK_32.txt ==================
+=============== COMPARE results for output_bubblesort_CLOCK_32.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 353 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 540 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 964 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 1088 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 1205 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 1288 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 2364 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 2492 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 2601 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 2680 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 5015 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 5321 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 6748 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 7413 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 7663 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 8555 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 8897 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 9174 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 9838 search algo bubblesort and page rep. algo CLOCK and page size 32
+Run simulation for seed = 2806 search algo quicksort and page rep. algo AGING and page size 32
+=============== COMPARE results for logfile_quicksort_AGING_32.txt ==================
+=============== COMPARE results for output_quicksort_AGING_32.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 353 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 540 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 964 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 1088 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 1205 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 1288 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 2364 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 2492 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 2601 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 2680 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 5015 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 5321 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 6748 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 7413 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 7663 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 8555 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 8897 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 9174 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 9838 search algo quicksort and page rep. algo AGING and page size 32
+Run simulation for seed = 2806 search algo bubblesort and page rep. algo AGING and page size 32
+=============== COMPARE results for logfile_bubblesort_AGING_32.txt ==================
+=============== COMPARE results for output_bubblesort_AGING_32.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 353 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 540 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 964 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 1088 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 1205 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 1288 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 2364 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 2492 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 2601 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 2680 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 5015 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 5321 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 6748 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 7413 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 7663 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 8555 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 8897 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 9174 search algo bubblesort and page rep. algo AGING and page size 32
+Run simulation for seed = 9838 search algo bubblesort and page rep. algo AGING and page size 32
+rm -r -f ./obj ./bin 
+rm -rf *.o mmanage vmappl logfile.txt pagefile.bin
+rm -rf /dev/shm/sem.sem_wakeup_mmanager_vm_simulation
+rm -rf /dev/shm/sem.sem_wakeup_vmapp_vm_simulation
+sudo ipcrm -ashm
+computing dependencies for  src/syncdataexchange.c
+computing dependencies for  src/logger.c
+computing dependencies for  src/pagefile.c
+computing dependencies for  src/mmanage.c
+computing dependencies for  src/vmaccess.c
+computing dependencies for  src/vmappl.c
+compiling src/mmanage.c ...
+compiling src/vmaccess.c ...
+compiling src/pagefile.c ...
+compiling src/logger.c ...
+compiling src/syncdataexchange.c ...
+/usr/bin/gcc -lrt -lpthread  -o bin/mmanage obj/mmanage.o obj/vmaccess.o obj/pagefile.o obj/logger.o obj/syncdataexchange.o
+compiling src/vmappl.c ...
+/usr/bin/gcc -lrt -lpthread  -o bin/vmappl obj/vmappl.o obj/vmaccess.o obj/pagefile.o obj/logger.o obj/syncdataexchange.o
+Run simulation for seed = 2806 search algo quicksort and page rep. algo FIFO and page size 64
+=============== COMPARE results for logfile_quicksort_FIFO_64.txt ==================
+=============== COMPARE results for output_quicksort_FIFO_64.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 353 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 540 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 964 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 1088 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 1205 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 1288 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 2364 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 2492 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 2601 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 2680 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 5015 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 5321 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 6748 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 7413 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 7663 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 8555 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 8897 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 9174 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 9838 search algo quicksort and page rep. algo FIFO and page size 64
+Run simulation for seed = 2806 search algo bubblesort and page rep. algo FIFO and page size 64
+=============== COMPARE results for logfile_bubblesort_FIFO_64.txt ==================
+=============== COMPARE results for output_bubblesort_FIFO_64.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 353 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 540 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 964 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 1088 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 1205 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 1288 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 2364 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 2492 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 2601 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 2680 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 5015 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 5321 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 6748 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 7413 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 7663 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 8555 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 8897 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 9174 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 9838 search algo bubblesort and page rep. algo FIFO and page size 64
+Run simulation for seed = 2806 search algo quicksort and page rep. algo CLOCK and page size 64
+=============== COMPARE results for logfile_quicksort_CLOCK_64.txt ==================
+=============== COMPARE results for output_quicksort_CLOCK_64.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 353 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 540 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 964 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 1088 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 1205 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 1288 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 2364 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 2492 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 2601 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 2680 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 5015 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 5321 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 6748 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 7413 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 7663 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 8555 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 8897 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 9174 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 9838 search algo quicksort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 2806 search algo bubblesort and page rep. algo CLOCK and page size 64
+=============== COMPARE results for logfile_bubblesort_CLOCK_64.txt ==================
+=============== COMPARE results for output_bubblesort_CLOCK_64.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 353 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 540 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 964 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 1088 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 1205 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 1288 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 2364 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 2492 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 2601 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 2680 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 5015 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 5321 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 6748 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 7413 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 7663 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 8555 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 8897 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 9174 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 9838 search algo bubblesort and page rep. algo CLOCK and page size 64
+Run simulation for seed = 2806 search algo quicksort and page rep. algo AGING and page size 64
+=============== COMPARE results for logfile_quicksort_AGING_64.txt ==================
+=============== COMPARE results for output_quicksort_AGING_64.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 353 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 540 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 964 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 1088 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 1205 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 1288 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 2364 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 2492 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 2601 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 2680 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 5015 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 5321 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 6748 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 7413 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 7663 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 8555 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 8897 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 9174 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 9838 search algo quicksort and page rep. algo AGING and page size 64
+Run simulation for seed = 2806 search algo bubblesort and page rep. algo AGING and page size 64
+=============== COMPARE results for logfile_bubblesort_AGING_64.txt ==================
+=============== COMPARE results for output_bubblesort_AGING_64.txt ==================
+============================================================================
+Run simulation for seed = 225 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 353 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 540 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 964 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 1088 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 1205 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 1288 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 2364 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 2492 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 2601 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 2680 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 5015 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 5321 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 6748 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 7413 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 7663 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 8555 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 8897 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 9174 search algo bubblesort and page rep. algo AGING and page size 64
+Run simulation for seed = 9838 search algo bubblesort and page rep. algo AGING and page size 64

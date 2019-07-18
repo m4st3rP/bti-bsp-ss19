@@ -1,0 +1,37 @@
+# file makefile
+.PHONY: clean
+.PHONY: all
+CC = gcc
+CFLAGS = -Wall -O2
+LDFLAGS = -g -pthread -lrt 
+
+SRCDIR = src
+OBJDIR = obj
+BINDIR = bin
+EXEFILE = project
+
+srcfiles = $(wildcard $(SRCDIR)/*.c)
+objfiles = $(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(srcfiles:.c=.o))
+# Alternative objfiles = $(subst $(SRCDIR)/,$(OBJDIR)/,$(srcfiles:.c=.o))
+deps = $(objfiles:.o=.d)
+
+all: $(BINDIR)/$(EXEFILE)
+-include $(deps)
+
+$(OBJDIR)/%.d: $(SRCDIR)/%.c
+	@echo "computing dependencies for $<"
+	@mkdir -p $(@D)
+	@$(CC) -MM -MT "$@ $(patsubst %.d,%.o,$@)" -MF $@ $<
+
+$(OBJDIR)/%.o: $(SRCDIR)/%.c
+	@echo "compiling $< ..."
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -c $< -o $@
+
+$(BINDIR)/$(EXEFILE): $(objfiles)
+	@mkdir -p $(@D)
+	$(CC) $(LDFLAGS) -o $@ $^
+
+clean:
+	rm -r -f $(OBJDIR) $(BINDIR)
+#EOF

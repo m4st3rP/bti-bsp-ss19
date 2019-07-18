@@ -1,0 +1,8 @@
+seed =   2806 page_rep_algo =    FIFO search_algo =    quicksort pagesize =    8 pagefaults    544, 
+seed =   2806 page_rep_algo =    FIFO search_algo =   bubblesort pagesize =    8 pagefaults  19184, 
+seed =   2806 page_rep_algo =   CLOCK search_algo =    quicksort pagesize =    8 pagefaults    529, 
+seed =   2806 page_rep_algo =   CLOCK search_algo =   bubblesort pagesize =    8 pagefaults  18082, 
+seed =   2806 page_rep_algo =   AGING search_algo =    quicksort pagesize =    8 pagefaults    533, 
+seed =   2806 page_rep_algo =   AGING search_algo =   bubblesort pagesize =    8 pagefaults  15340, 
+seed =   2806 page_rep_algo =    FIFO search_algo =    quicksort pagesize =   16 pagefaults    286, 
+seed =   2806 page_rep_algo =    FIFO search_algo =   bubblesort pagesize =   16 pagefaults  10346, 
